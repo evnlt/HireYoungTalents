@@ -1,0 +1,58 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Portal.DAL", "src\backend\portal\Portal.DAL\Portal.DAL.csproj", "{53A3183F-8FAA-482C-8EB0-6BA4B3DEE8A9}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Portal.BLL", "src\backend\portal\Portal.BLL\Portal.BLL.csproj", "{53F98004-688E-45CE-85D8-2720F89EDDFB}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Portal.API", "src\backend\portal\Portal.API\Portal.API.csproj", "{F98509A4-CA63-48B0-A555-06E0C7E88715}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Portal.API.Models", "src\backend\portal\Portal.API.Models\Portal.API.Models.csproj", "{5F94D302-FAC4-45FE-89E0-1DD4187E5034}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Portal.Models", "src\backend\portal\Portal.Models\Portal.Models.csproj", "{53BE337F-E5CB-4E17-86F6-002675859B9E}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "common", "common", "{76755CA0-16EB-4D1F-871A-A408C4E50674}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "API.Models.Common", "src\backend\common\API.Models.Common\API.Models.Common.csproj", "{73F6C323-A291-4AA0-85D0-C43E81CBA850}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Constants", "src\backend\common\Constants\Constants.csproj", "{9CF938D3-6E3C-49D1-B9F7-4370E44B292A}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{53A3183F-8FAA-482C-8EB0-6BA4B3DEE8A9}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{53A3183F-8FAA-482C-8EB0-6BA4B3DEE8A9}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{53A3183F-8FAA-482C-8EB0-6BA4B3DEE8A9}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{53A3183F-8FAA-482C-8EB0-6BA4B3DEE8A9}.Release|Any CPU.Build.0 = Release|Any CPU
+		{53F98004-688E-45CE-85D8-2720F89EDDFB}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{53F98004-688E-45CE-85D8-2720F89EDDFB}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{53F98004-688E-45CE-85D8-2720F89EDDFB}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{53F98004-688E-45CE-85D8-2720F89EDDFB}.Release|Any CPU.Build.0 = Release|Any CPU
+		{F98509A4-CA63-48B0-A555-06E0C7E88715}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{F98509A4-CA63-48B0-A555-06E0C7E88715}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{F98509A4-CA63-48B0-A555-06E0C7E88715}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{F98509A4-CA63-48B0-A555-06E0C7E88715}.Release|Any CPU.Build.0 = Release|Any CPU
+		{5F94D302-FAC4-45FE-89E0-1DD4187E5034}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{5F94D302-FAC4-45FE-89E0-1DD4187E5034}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{5F94D302-FAC4-45FE-89E0-1DD4187E5034}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{5F94D302-FAC4-45FE-89E0-1DD4187E5034}.Release|Any CPU.Build.0 = Release|Any CPU
+		{53BE337F-E5CB-4E17-86F6-002675859B9E}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{53BE337F-E5CB-4E17-86F6-002675859B9E}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{53BE337F-E5CB-4E17-86F6-002675859B9E}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{53BE337F-E5CB-4E17-86F6-002675859B9E}.Release|Any CPU.Build.0 = Release|Any CPU
+		{73F6C323-A291-4AA0-85D0-C43E81CBA850}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{73F6C323-A291-4AA0-85D0-C43E81CBA850}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{73F6C323-A291-4AA0-85D0-C43E81CBA850}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{73F6C323-A291-4AA0-85D0-C43E81CBA850}.Release|Any CPU.Build.0 = Release|Any CPU
+		{9CF938D3-6E3C-49D1-B9F7-4370E44B292A}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{9CF938D3-6E3C-49D1-B9F7-4370E44B292A}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{9CF938D3-6E3C-49D1-B9F7-4370E44B292A}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{9CF938D3-6E3C-49D1-B9F7-4370E44B292A}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(NestedProjects) = preSolution
+		{73F6C323-A291-4AA0-85D0-C43E81CBA850} = {76755CA0-16EB-4D1F-871A-A408C4E50674}
+		{9CF938D3-6E3C-49D1-B9F7-4370E44B292A} = {76755CA0-16EB-4D1F-871A-A408C4E50674}
+	EndGlobalSection
+EndGlobal

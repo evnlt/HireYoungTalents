@@ -1,0 +1,14 @@
+﻿<Project Sdk="Microsoft.NET.Sdk">
+
+	<PropertyGroup>
+		<TargetFramework>net8.0</TargetFramework>
+		<Nullable>enable</Nullable>
+		<AssemblyName>HireYoungTalents.$(MSBuildProjectName)</AssemblyName>
+		<RootNamespace>HireYoungTalents.$(MSBuildProjectName.Replace(" ", "_"))</RootNamespace>
+	</PropertyGroup>
+
+	<ItemGroup>
+		<ProjectReference Include="..\Portal.DAL\Portal.DAL.csproj"/>
+	</ItemGroup>
+
+</Project>
