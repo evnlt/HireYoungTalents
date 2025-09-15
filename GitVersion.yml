@@ -1,0 +1,45 @@
+next-version: 1.0
+assembly-versioning-scheme: MajorMinorPatch
+assembly-versioning-format: '{Major}.{Minor}.{CommitsSinceVersionSource ?? 0}'
+assembly-file-versioning-format: '{Major}.{Minor}.{CommitsSinceVersionSource ?? 0}'
+mode: ContinuousDeployment
+branches:
+  main:
+    regex: ^master$|^main$
+    mode: ContinuousDelivery
+    tag: ''
+    increment: Patch
+    prevent-increment-of-merged-branch-version: false
+    track-merge-target: false
+    source-branches: [ 'develop', 'feature' ]
+    tracks-release-branches: false
+    is-release-branch: true
+    is-mainline: false
+    pre-release-weight: 30000
+  develop:
+    regex: ^dev(elop)?(ment)?$
+    mode: ContinuousDeployment
+    tag: beta
+    increment: Patch
+    prevent-increment-of-merged-branch-version: false
+    track-merge-target: true
+    source-branches: []
+    tracks-release-branches: true
+    is-release-branch: false
+    is-mainline: false
+    pre-release-weight: 0
+  feature:
+    regex: ^\#\d+?[\-]
+    mode: ContinuousDelivery
+    tag: alpha
+    increment: Inherit
+    prevent-increment-of-merged-branch-version: false
+    track-merge-target: true
+    source-branches: [ 'develop', 'main' ]
+    tracks-release-branches: true
+    is-release-branch: false
+    is-mainline: false
+    pre-release-weight: 0
+ignore:
+  sha: []
+merge-message-formats: {}
