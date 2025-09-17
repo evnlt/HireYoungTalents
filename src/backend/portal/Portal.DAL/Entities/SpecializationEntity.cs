@@ -1,4 +1,8 @@
-﻿namespace HireYoungTalents.Portal.DAL.Entities;
+﻿using System.Collections.Generic;
+
+using HireYoungTalents.Portal.DAL.Entities.Applicant;
+
+namespace HireYoungTalents.Portal.DAL.Entities;
 
 public class SpecializationEntity
 {
@@ -7,4 +11,6 @@ public class SpecializationEntity
 	public bool IsSecondary { get; init; }
 	public string Name { get; init; } = default!;
 	public bool HasApplicants { get; set; }
+
+	public ICollection<ApplicantProfileEntity> ApplicantProfiles { get; set; } = default!;
 }

@@ -8,10 +8,8 @@ namespace HireYoungTalents.Portal.DAL.Entities.Applicant;
 public class ApplicantSubmissionEntity
 {
 	public int Id { get; init; }
-	public DateTime Created { get; init; }
-	public DateTime Updated { get; set; }
-	//public Guid UserId { get; init; }
-	//public ApplicationUser User { get; set; } = default!;
+	public DateTime CreatedDate { get; init; }
+	public DateTime UpdatedDate { get; set; }
 	public ApplicantSubmissionStatus Status { get; set; }
 	public ApplicantSubmissionStage Stage { get; set; }
 

@@ -6,4 +6,8 @@ public class CertificateEntity
 	//public Guid FileId { get; set; }
 	public int Points { get; set; }
 	public string Name { get; set; } = default!;
+
+	public int ApplicantProfileId { get; set; }
+
+	public ApplicantProfileEntity ApplicantProfile { get; set; } = default!;
 }

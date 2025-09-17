@@ -1,4 +1,8 @@
-﻿namespace HireYoungTalents.Portal.DAL.Entities.Location;
+﻿using System.Collections.Generic;
+
+using HireYoungTalents.Portal.DAL.Entities.Applicant;
+
+namespace HireYoungTalents.Portal.DAL.Entities.Location;
 
 public class CityEntity
 {
@@ -8,4 +12,5 @@ public class CityEntity
 	public int CountryId { get; init; }
 
 	public CountryEntity Country { get; init; } = default!;
+	public ICollection<ApplicantProfileEntity> ApplicantProfiles { get; set; } = default!;
 }
